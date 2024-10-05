@@ -1,0 +1,113 @@
+/* From Uiverse.io by alexruix */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #242424;
+}
+
+.card {
+    width: 250px;
+    height: 304px;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius:20px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 100px;
+   }
+   
+   .card-img {
+    background:url(https://ik.imagekit.io/shasta/thrustMIT_website/2022/ashwin_WkD67L-e6.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1667082644770);
+    background-size: cover;
+    height: 60%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+    border: 1px solid black;
+   }
+   
+   .card-info {
+    padding-top: 8%;
+   }
+   
+   svg {
+    width: 25px;
+    height: 25px;
+   }
+   
+   .card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+   }
+   
+   /*Text*/
+   .text-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 1.35em;
+    line-height: 1.5;
+    margin-top: 0 !important;
+    margin-bottom: 5px;
+    text-align: center;
+   }
+   
+   .text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+    margin-top: 0 !important;
+    margin-bottom: 5px !important;
+    text-align: center;
+   }
+   
+   /*Button*/
+   .card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+   }
+   
+   /*Hover*/
+   .card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+   }
+   
+   .card-button:hover {
+    border: 1px solid #ffcaa6;
+    background-color: #ffcaa6;
+   }
+   
+   .social-media{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+   }
+
+   .social-media svg {
+    fill: #EF6603;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.social-media svg:hover {
+    transform: translateY(-5px); /* Move the icon up by 5 pixels on hover */
+}
+
+.profile-list {
+  display: flex;
+  flex-wrap: wrap; /* This will wrap the cards on smaller screens */
+  justify-content: space-around; /* Distribute the space around the cards */
+  padding: 20px;
+  align-items: center;
+}
