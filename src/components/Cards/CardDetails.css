@@ -1,0 +1,120 @@
+.details-container {
+    display: flex;
+    padding: 16px;
+    color: white !important;
+  }
+  
+  /* Image container with 40% width on desktop */
+  .details-image-container {
+    flex: 0 0 40%; /* 40% of the parent container */
+    margin-right: 16px;
+  }
+  
+  /* Make the image responsive */
+  .details-image {
+    width: 100%;
+    max-height: 90vh;
+    border-radius: 8px;
+  }
+  
+  /* Table container with 60% width on desktop */
+  .details-table-container {
+    flex: 1;
+  }
+  
+  /* Style for the table */
+  .details-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .details-table th,
+  .details-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  .details-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+  }
+  
+  /* Styling for the table heading */
+  .table-heading {
+    font-size: 60px; 
+    display: inline-block;
+    margin-top: 10px;
+    margin: 50px 0;
+    position: relative;
+    margin-left: 10px;
+  }
+  
+  .table-heading::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: orange;
+    width: 100%;
+    margin-top: 2px;
+  }
+
+  .details-button {
+    background-color: orange;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .details-button:hover {
+    background-color: darkorange; /* Change color to darker orange on hover */
+  }
+  
+  .teamdetails-button {
+    border: 3px solid orange;
+    background-color: transparent;
+    padding: 12px 30px;
+    border-radius: 30px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    margin-left: 30px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .teamdetails-button:hover {
+    background-color: rgba(255, 140, 0, 0.233); 
+  }
+  
+  
+  /* Mobile view - stack image and table vertically */
+  @media (max-width: 768px) {
+    .details-container {
+      flex-direction: column; /* Stack vertically */
+    }
+  
+    .details-image-container,
+    .details-table-container {
+      flex: 0 0 100%;
+      margin: 0; /* Reset margins */
+    }
+  
+    .details-image {
+      max-height: 60vh; /* Adjust size in mobile view */
+    }
+  
+    .table-heading {
+      font-size: 20px; /* Adjust font size for mobile view */
+    }
+  }
+  

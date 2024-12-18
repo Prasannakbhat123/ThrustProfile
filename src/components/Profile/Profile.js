@@ -7,13 +7,14 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import './Profile.css';
 
-const Profile = ({ name, role, instagram, twitter, facebook, linkedin, github, email, image }) => {
+const Profile = ({ name, role, subsystem, instagram, twitter, facebook, linkedin, github, email, image }) => {
     return (
         <div className="card">
             <div className="card-img" style={{ backgroundImage: `url(${image})` }}></div>
             <div className="card-info">
                 <h2 className="text-title">{name}</h2>
-                <p className="text-body">{role}</p>
+                {role && <p className="text-body">{role}</p>}
+                {subsystem && <p className="text-body">{subsystem}</p>}
             </div>
             <div className="social-media">
                 {instagram && <a href={instagram} target="_blank" rel="noopener noreferrer"><InstagramIcon className="svg" /></a>}
